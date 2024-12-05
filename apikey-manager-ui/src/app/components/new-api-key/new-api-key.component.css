@@ -1,7 +1,10 @@
 .container {
   max-width: 600px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .loading-container,
@@ -17,39 +20,63 @@
 .error-message {
   color: #f44336;
   font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: rgba(244, 67, 54, 0.1);
 }
 
 .button-container {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   margin-top: 1.5rem;
 }
 
 .api-key-container {
   margin-top: 1.5rem;
   text-align: center;
+  padding: 1rem;
+  background-color: var(--gray-100);
+  border-radius: 8px;
 }
 
 .warning {
   color: #f57c00;
   font-weight: 500;
   margin-bottom: 1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: rgba(245, 124, 0, 0.1);
 }
 
 .api-key {
-  background-color: #f5f5f5;
+  background-color: var(--white);
   padding: 1rem;
   border-radius: 4px;
   font-family: monospace;
   margin: 1rem 0;
   word-break: break-all;
+  border: 1px solid var(--gray-300);
 }
 
 button {
   min-width: 150px;
 }
 
+button.mat-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+button.mat-primary:hover {
+  background-color: var(--primary-light);
+}
+
 mat-spinner {
   display: inline-block;
   margin-right: 8px;
+}
+
+::ng-deep .mat-progress-spinner circle {
+  stroke: var(--primary) !important;
 }

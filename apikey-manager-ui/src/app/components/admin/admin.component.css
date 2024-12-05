@@ -2,14 +2,15 @@
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--navy);
+  font-weight: 500;
 }
 
 .full-width {
@@ -20,13 +21,43 @@ h2 {
   margin-top: 1.5rem;
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
 }
 
 button {
   min-width: 150px;
 }
 
+button.mat-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+button.mat-primary:hover {
+  background-color: var(--primary-light);
+}
+
 mat-spinner {
   display: inline-block;
   margin-right: 8px;
+}
+
+::ng-deep .mat-form-field-outline {
+  color: var(--gray-300) !important;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-outline {
+  color: var(--primary) !important;
+}
+
+::ng-deep .mat-form-field-label {
+  color: var(--navy) !important;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: var(--primary) !important;
+}
+
+::ng-deep .mat-progress-spinner circle {
+  stroke: var(--primary) !important;
 }

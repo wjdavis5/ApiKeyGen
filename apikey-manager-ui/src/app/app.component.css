@@ -1,0 +1,26 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-toolbar {
+  background-color: var(--primary-dark) !important;
+  color: var(--white) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  flex: 1;
+  padding: 24px;
+  background-color: var(--gray-100);
+}
+
+/* Override Material Design styles */
+::ng-deep .mat-mdc-raised-button.mat-primary {
+  background-color: var(--primary) !important;
+}
+
+::ng-deep .mat-mdc-raised-button.mat-primary:hover {
+  background-color: var(--primary-light) !important;
+}

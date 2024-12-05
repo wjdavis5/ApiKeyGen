@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-dark: #0A3B3B;
+  --primary: #00B9B9;
+  --primary-light: #4CD7D7;
+  --navy: #003B4C;
+  --white: #FFFFFF;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--navy);
+  background-color: var(--gray-100);
+}
+
+/* Primary Button Styles */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+/* Secondary Button Styles */
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 8px;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 16px;
+}
+
+/* Form Control Styles */
+.form-control {
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 185, 185, 0.2);
+}
