@@ -11,7 +11,8 @@ export interface StoreKeyRequest {
   providedIn: 'root'
 })
 export class ApiKeyService {
-  private baseUrl = 'https://localhost:7018/api/ApiKey';
+  //private baseUrl = 'https://localhost:7018/api/ApiKey';
+  private baseUrl = 'http://127.0.0.1:8787/api/ApiKey';
 
   constructor(private http: HttpClient) { }
 
